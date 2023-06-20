@@ -23,6 +23,6 @@ class latestPost extends Component
     public function render(): View|Closure|string
     {
 
-        return view('components.latest-post',['last'=>Post::latest()->first()]);
+        return view('components.latest-post',['last'=>Post::orderBy('id', 'DESC')->first()]);
     }
 }

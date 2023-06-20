@@ -12,7 +12,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index.index',['posts'=>Post::get()]);
+        return view('index.index',['posts'=>Post::get(),'last'=>Post::orderBy('id', 'DESC')->first()]);
     }
 
     /**

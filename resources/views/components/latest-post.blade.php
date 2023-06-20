@@ -1,3 +1,5 @@
+
+@if ($last !== null)
 <div class="slider">
     <ul class="slides">
         <li>
@@ -20,3 +22,5 @@
 
 
 </div>
+
+@endif
